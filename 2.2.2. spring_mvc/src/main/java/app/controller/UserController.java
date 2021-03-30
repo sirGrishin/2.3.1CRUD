@@ -30,13 +30,6 @@ public class UserController {
     }
 
 
-    @GetMapping("/new")
-    public String newCustomerForm(Map<String, Object> model) {
-        User user = new User();
-        model.put("user", user);
-        return "new_user";
-    }
-
     @PostMapping("/saveUser")
     public String saveUser(@ModelAttribute("user") User user) {
         userService.saveUser(user);
