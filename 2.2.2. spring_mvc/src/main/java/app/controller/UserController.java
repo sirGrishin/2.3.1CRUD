@@ -14,11 +14,11 @@ import java.util.Map;
 @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Controller
 @RequestMapping("/")
-public class PeopleController {
+public class UserController {
 
     private final UserService userService;
 
-    public PeopleController(UserService userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
