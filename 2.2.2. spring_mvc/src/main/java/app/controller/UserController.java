@@ -30,7 +30,7 @@ public class UserController {
     }
 
 
-    @RequestMapping("/new")
+    @GetMapping("/new")
     public String newCustomerForm(Map<String, Object> model) {
         User user = new User();
         model.put("user", user);
